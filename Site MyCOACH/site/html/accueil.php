@@ -18,7 +18,7 @@
     
     <!-- barre de navigation-->
     <div class="content">
-        <a href="#">home</a>
+        <a href="..\html\seances.php">seances</a>
         <a href="#">home</a>
         <a href="#">home</a>
     </div>
