@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCOACH-accueil</title>
+    <link rel="stylesheet" href="..\css\style_accueil.css">
+</head>
+<body>
+
+    <!-- header de la page-->
+    <div class="header">
+        <img class="imgpres" src="..\image\imagecoach.jpg" alt="image coach">
+        <div class="text">
+            <p class="title">MyCOACH<br>Entraîner votre corps</p>
+        </div>
+    </div>
+    
+    <!-- barre de navigation-->
+    <div class="content">
+        <a href="#">home</a>
+        <a href="#">home</a>
+        <a href="#">home</a>
+    </div>
+    
+    <!-- contenu de la page-->
+    <div class="p1">
+        <img class="p1img" src="..\image\imagecoach.jpg" alt="image coach">
+        <p class="p1presentation">Présentation</p>
+        <p class="p1text">Nom : Malik Johnson <br>
+            Âge : 35 ans <br>
+            Expérience en coaching sportif : 10 ans <br>
+            Spécialité : Entraînement en salle de gym <br>
+        </p>
+    </div>
+    <div class="p2">
+        <img class="p2img" src="..\image\entrainement.png" alt="image coach">
+        <p class="p2presentation">Activités</p>
+        <ul class="p2text">
+            <li>Entraînement en musculation et en force</li>
+            <li>Entraînement cardiovasculaire</li>
+            <li>Perte de poids et gestion de la composition corporelle</li>
+            <li>Amélioration de la flexibilité et de la mobilité</li>
+            <li>Développement de la confiance en soi et de la motivation</li>
+        </ul>
+    </div>
+
+    <!-- pied de page-->
+    <footer>
+        <p class="apropos">
+            À propos:<br></p>
+        <p class="pers_info"><strong>Nom: Johnson<br>
+            Adresse mail: johnson.ml@gmail.com</strong></p>
+    </footer>
+</body>
+</html>
