@@ -36,7 +36,7 @@
             $nom_lieu = $ligne["nom_lieu"];
             $adresse = $ligne["adresse"];
             $cp = $ligne["cp"];
-            $ville = $ligne["ille"];
+            $ville = $ligne["ville"];
             
             //cration d'une ligne avec les données
             $table ="<tr>
