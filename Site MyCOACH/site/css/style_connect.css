@@ -1,0 +1,83 @@
+html body{
+    height:100%;
+    width:100%;
+    margin:0;
+}
+
+.form{
+    width:340px;
+    height: 340px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin:calc(50vh - 220px) auto;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    position:relative;
+    backdrop-filter: blur(5px);
+}
+
+.button{
+    display:flex;
+    justify-content:space-around;
+    padding-top: 30px;
+}
+
+.text{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.connexion{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.login{
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #000;
+}
+
+.password{
+    margin-top: 50px;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #000;
+}
+
+::placeholder{
+    color: #000;
+    font-size: 20px;
+}
+
+input[type="submit"]{
+    background: black;
+    color: #fff;
+    border: none;
+    border-radius: 25px 25px 25px 25px;
+    height: 50px;
+    width: 120px;
+}
+
+input[type="reset"]{
+    background: black;
+    color: #fff;
+    border: none;
+    border-radius: 25px 25px 25px 25px;
+    height: 50px;
+    width: 120px;
+}
+
+.envoyer:hover{
+    transition-duration: 250ms;
+    color: orange;
+}
+
+.annuler:hover{
+    transition-duration: 250ms;
+    color: 	orange;
+}

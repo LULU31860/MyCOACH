@@ -14,6 +14,11 @@
         <div class="text">
             <p class="title">MyCOACH<br>Entraîner votre corps</p>
         </div>
+        <div class="bouton">
+            <form action="..\html\connect.php" method="post">
+            <button type="submit">connexion</button>
+            </form>
+        </div>
     </div>
     
     <!-- barre de navigation-->

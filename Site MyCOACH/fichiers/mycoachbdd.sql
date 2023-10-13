@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : ven. 06 oct. 2023 à 12:35
+-- Généré le : ven. 13 oct. 2023 à 09:40
 -- Version du serveur : 8.0.31
 -- Version de PHP : 8.0.26
 
@@ -44,6 +44,29 @@ INSERT INTO `activites` (`num_act`, `nom_act`) VALUES
 (3, 'Perte de poids et gestion de la composition corporelle'),
 (4, 'Amélioration de la flexibilité et de la mobilité'),
 (5, 'Développement de la confiance en soi et de la moti');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `clients`
+--
+
+DROP TABLE IF EXISTS `clients`;
+CREATE TABLE IF NOT EXISTS `clients` (
+  `id_client` int NOT NULL,
+  `nom_client` varchar(50) DEFAULT NULL,
+  `prenom_client` varchar(50) DEFAULT NULL,
+  `login` varchar(50) DEFAULT NULL,
+  `password` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id_client`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Déchargement des données de la table `clients`
+--
+
+INSERT INTO `clients` (`id_client`, `nom_client`, `prenom_client`, `login`, `password`) VALUES
+(1, 'bob', 'bob', 'bob', 'bob');
 
 -- --------------------------------------------------------
 
