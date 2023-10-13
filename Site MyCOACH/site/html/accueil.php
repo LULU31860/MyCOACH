@@ -16,7 +16,7 @@
         </div>
         <div class="bouton">
             <form action="..\html\connect.php" method="post">
-            <button type="submit">connexion</button>
+                <button type="submit" class="btn_connexion">connexion</button>
             </form>
         </div>
     </div>
