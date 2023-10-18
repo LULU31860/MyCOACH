@@ -1,5 +1,6 @@
 <?php
 
+// script de connexion a la base de donnees
 $login="root";
 $password="";
 
