@@ -1,6 +1,6 @@
 <?php
     session_start();
-
+    $_SESSION["acces"]="";
     // connexion a la base de donnees
     include("../php/connexion.php");
 
@@ -20,6 +20,7 @@
     // condition qui verifie le login et le mdp, si vrai renvoie la page accueil
     if ($motdepasse_taper==$motdepasse_bdd){
         header("Location: ..\html\accueil.php");
+        $_SESSION["acces"]="ok";
     }
     // sinon ecrit ""Saisie eronnee sur la page de connexion
     else{

@@ -1,3 +1,8 @@
+<?php
+
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -15,15 +20,33 @@
             <p class="title">MyCOACH<br>Entraîner votre corps</p>
         </div>
         <div class="bouton">
-            <form action="..\html\connect.php" method="post">
-                <button type="submit" class="btn_connexion">connexion</button>
-            </form>
+            <?php
+            if(isset($_SESSION["acces"])){
+                echo 
+                '"<form action="..\html\connect.php" method="post">
+                    <button type="submit" class="btn_connexion" style="display:none;">connexion</button>
+                </form>"';
+            }
+            else{
+                echo 
+                '"<form action="..\html\connect.php" method="post">
+                    <button type="submit" class="btn_connexion" style="display:;">connexion</button>
+                </form>"';
+            }
+            ?>
         </div>
     </div>
     
     <!-- barre de navigation-->
     <div class="content">
-        <a href="..\html\seances.php">seances</a>
+        <?php
+        if(isset($_SESSION["acces"])){
+            echo '"<a href="..\html\seances.php">seances</a>"';
+        }
+        else{
+            echo '"<a href="..\html\seances.php" style="visibility:hidden;">seances</a>"';
+        }
+        ?>
         <a href="#">home</a>
         <a href="#">home</a>
     </div>
@@ -59,3 +82,6 @@
     </footer>
 </body>
 </html>
+<?php
+session_destroy();
+?>
