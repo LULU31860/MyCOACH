@@ -1,20 +1,5 @@
 <?php
-
 session_start();
-$testingvalue = $_SESSION["time"];
-// 5 minutes en seconde
-$inactive = 300;
-
-
-$_SESSION['expire'] = time() + $inactive; //heure de fin de session
-
-
-if(time() > $_SESSION['expire'])
-{  
-$_SESSION['time'] = '';
- session_unset();
- session_destroy();
-}
 ?>
 
 <!DOCTYPE html>
@@ -94,3 +79,6 @@ $_SESSION['time'] = '';
     </footer>
 </body>
 </html>
+<?php
+session_destroy();
+?>
