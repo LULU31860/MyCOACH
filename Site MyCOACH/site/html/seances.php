@@ -1,3 +1,8 @@
+<?php
+
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -10,8 +15,6 @@
     <!-- barre de navigation-->
     <div class="content">
         <a href="..\html\accueil.php">accueil</a>
-        <a href="#">home</a>
-        <a href="#">home</a>
     </div>
     <div class="titre">
         <h1>Les Seances</h1>

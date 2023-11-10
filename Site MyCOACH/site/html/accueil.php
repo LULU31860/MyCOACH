@@ -1,6 +1,20 @@
 <?php
 
 session_start();
+$testingvalue = $_SESSION["time"];
+// 5 minutes en seconde
+$inactive = 300;
+
+
+$_SESSION['expire'] = time() + $inactive; //heure de fin de session
+
+
+if(time() > $_SESSION['expire'])
+{  
+$_SESSION['time'] = '';
+ session_unset();
+ session_destroy();
+}
 ?>
 
 <!DOCTYPE html>
@@ -47,8 +61,6 @@ session_start();
             echo '"<a href="..\html\seances.php" style="visibility:hidden;">seances</a>"';
         }
         ?>
-        <a href="#">home</a>
-        <a href="#">home</a>
     </div>
     
     <!-- contenu de la page-->
@@ -82,6 +94,3 @@ session_start();
     </footer>
 </body>
 </html>
-<?php
-session_destroy();
-?>
